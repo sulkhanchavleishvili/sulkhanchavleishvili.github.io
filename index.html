@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulkhan Chavleishvili</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: "Courier New", Courier, monospace;
+            color: black;
+            background-color: white;
+        }
+
+        /* Sidebar style */
+        .sidebar {
+            width: 33.33%; /* 1/3 of the page */
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center the content */
+            align-items: flex-start; /* Align items to the left */
+        }
+
+        .sidebar h1 {
+            font-size: 25px;
+            font-weight: normal;
+            margin: 20px 0;
+        }
+
+        .sidebar a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .sidebar a:hover {
+            color: #1E90FF;
+        }
+
+        /* Content area style */
+        .content {
+            width: 66.66%; /* 2/3 of the page */
+            padding: 20px;
+            margin-left: 33.33%;
+            color: black;
+            background-color: white;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* For centering title in the content */
+        .section h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        h2 {
+            font-weight: normal; /* Removes bold styling */
+        }
+
+        /* For general centering of content in the section */
+        .section p {
+            text-align: justify;  /* Aligning the text */
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Sidebar for navigation -->
+<div class="sidebar">
+    <h1>Sulkhan Chavleishvili</h1>
+    <a href="javascript:void(0);" onclick="showContent('home')">Home</a>
+    <a href="javascript:void(0);" onclick="showContent('research')">Research</a>
+    <a href="javascript:void(0);" onclick="showContent('cv')">CV</a>
+    <a href="javascript:void(0);" onclick="showContent('teaching')">Teaching</a>
+</div>
+
+<!-- Content area -->
+<div class="content">
+    <!-- Home section -->
+    <div id="home" class="section active">
+        <p><strong>sulkhan.chavleishvili[at]econ.au.dk</strong></p>
+        <p><strong>Aarhus BSS</strong></p>
+        <p>Fuglesangs Allé 4, building 2621, 5</p>
+        <p>8210 Aarhus V</p>
+        <p>Denmark</p>
+    </div>
+
+    <!-- Research section -->
+    <div id="research" class="section">
+        <h2>Publications</h2>
+        <p style="text-align: justify;"><strong>Chavleishvili, S., & Moench, E. (2025)</strong></p>
+        <p style="text-align: justify;"><strong>Natural disasters as macroeconomic tail risks, <i>Journal of Econometrics, Volume 247,</i> 105914.</strong></p>
+        <p>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0304407624002653" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">
+                [PDF]
+            </a>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <p style="text-align: justify;"><strong>Chavleishvili, S., & Manganelli, S. (2024) </strong></p>
+        <p style="text-align: justify;"><strong>Forecasting and stress testing with quantile vector autoregression. <i>Journal of Applied Econometrics, 39</i>(1), 66–85.</strong></p>
+        <p>
+            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jae.3009" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">
+                [PDF]
+            </a>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <h2>Working Papers</h2>
+        <p style="text-align: justify;">
+         <strong> Chavleishvili, S., Engle, R., Fahr, S., Kremer, M., Lund-Thomsen, F., Manganelli, S., and Schwaab, B.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong> The risk management approach to macro-prudential policy.</strong>
+        </p>
+        <p>
+            <a href="https://drive.google.com/file/d/1HY785U33T1b1-XK6ENA62QAH6Ptq4RKx/view" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none; margin-right: 10px;">[PDF]</a>
+            <a href="https://drive.google.com/file/d/1af3nupQ1VAMwiS4Sgf6p9OPvtodLuomV/view" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[Online Appendix]</a>
+            <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2565~e7b85e3982.en.pdf" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[ECB WP]</a>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <p style="text-align: justify;">
+            <strong>Chavleishvili, S., Kremer, M. and Lund-Thomsen, F.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong>Quantifying financial stability trade-offs for monetary policy</strong>
+        </p>
+        <p>
+            <a href="https://drive.google.com/file/d/1UgqHe-xb2Ihr_vleQ-z1OJNrOKRxDs1L/view?usp=drive_link" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[PDF]</a>
+            <a href="https://drive.google.com/file/d/1UhSTtjhXTQeCRI9D_g3M8mub4SKBFK1Z/view?usp=drive_link" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[Online Appendix]</a>
+            <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2833~99c23821b1.en.pdf" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[ECB WP]</a>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <p style="text-align: justify;">
+            <strong>Chavleishvili, S.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong>Modeling Asymmetric Tail Dependence in a Non-Gaussian Framework</strong>
+        </p>
+        <p>
+            <a href="https://drive.google.com/file/d/1pUfTgIFnplaDjh21YM5zc4msMKHweElr/view?usp=drive_link" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[PDF]</a>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <p style="text-align: justify;">
+            <strong>Chavleishvili, S. and Kremer, M.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong>CISS of death: measuring financial crises in real time</strong>
+        </p>
+        <p>
+            <a href="https://drive.google.com/file/d/1r8rO9-bnFnRJcvayPQ7nNLhVIkE2eGXG/view?usp=drive_link" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[PDF]</a>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <p style="text-align: justify;">
+            <strong>Chavleishvili, S.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong>A Score-driven CAViaR model</strong>
+        </p>
+        <p>
+            <a href="https://drive.google.com/file/d/13vefEL7062yYcgV0zQCZ30nY73qKGHvZ/view?usp=drive_link" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[PDF]</a>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <p style="text-align: justify;">
+            <strong>Chavleishvili, S.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong>Structural density forecasts and counterfactual analysis</strong>
+        </p>
+        <p>
+            <a href="https://drive.google.com/file/d/1SSD4Lo_bR5vZPrcLEBZK8XARwFA29pTS/view" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[PDF]</a>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+
+        <h2>Active Projects</h2>
+        <p style="text-align: justify;">
+            <strong>Catania, L. and Chavleishvili, S.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong>Maximum likelihood kernel density estimator</strong>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <p style="text-align: justify;">
+            <strong>Chavleishvili, S.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong>Structural quantile autoregression identified through external instruments</strong>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <p style="text-align: justify;">
+            <strong>Chavleishvili, S. and Moench, E.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong>Panel quantile vector autoregressions</strong>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <p style="text-align: justify;">
+            <strong>Chavleishvili, S.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong>Dynamic Score-Driven Filter in Matching Conditional Characteristic Functions</strong>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+        <p style="text-align: justify;">
+            <strong>Chavleishvili, S.</strong>
+        </p>
+        <p style="text-align: justify;">
+            <strong>Dynamic stochastic quantiles</strong>
+        </p>
+        <div style="width: 200px; border-bottom: 1px solid #ccc; margin-left: 205px; margin-top: -5px;"></div>
+    </div>
+
+<!-- CV section -->
+<div id="cv" class="section">
+    <h2>Curriculum Vitae</h2>
+    <iframe src="CV.pdf" style="width: 100%; height: 800px; border: none;"></iframe>
+</div>
+
+<!-- Teaching section -->
+<div id="teaching" class="section">
+    <h2>Teaching</h2>
+    <p style="text-align: justify;">
+        <strong>3620-Econometrics-I</strong>
+    </p>
+    <p>
+        <a href="https://kursuskatalog.au.dk/en/course/113350/3620-Econometrics-I" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[Description]</a>
+    </p>
+    <p style="text-align: justify;">
+        <strong>3611-Programming in Quantitative Economics</strong>
+    </p>
+    <p>
+        <a href="https://kursuskatalog.au.dk/da/course/110136/3611-Programming-in-Quantitative-Economics" target="_blank" style="font-weight: bold; color: #ff1e1e; text-decoration: none;">[Description]</a>
+    </p>
+</div>
+
+</div>
+
+<!-- JavaScript to toggle sections -->
+<script>
+    function showContent(section) {
+        // Hide all sections
+        var sections = document.querySelectorAll('.section');
+        sections.forEach(function(sec) {
+            sec.classList.remove('active');
+        });
+        
+        // Show the clicked section
+        var selectedSection = document.getElementById(section);
+        selectedSection.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
